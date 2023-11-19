@@ -57,7 +57,7 @@ public class ProductPromotionServiceImpl implements IProductPromotionService {
             }
         }
         // Testing on Computers Category
-        else if(promotion.getProduct().getCategory().getName().equals("Computers & Accessories") && promotion.getPercentage().intValue() > 20){
+        else if(promotion.getProduct().getCategory().getName().equals("Computers & Accessories") && promotion.getPercentage().intValue() > 15){
             try {
                 throw  new Exception("Promotion of Computers & Accessories products must not exceed 20%.");
             } catch (Exception e) {

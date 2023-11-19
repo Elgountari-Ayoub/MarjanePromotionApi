@@ -6,4 +6,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/marjanepromotion
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
+  liquibase:
+    change-log: db/changelog/db.changelog-master.xml
