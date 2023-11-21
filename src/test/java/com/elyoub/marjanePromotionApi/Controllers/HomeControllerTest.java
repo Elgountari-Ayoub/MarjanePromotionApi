@@ -25,10 +25,9 @@ class HomeControllerTest {
         MvcResult result = mvc.perform(request).andReturn();
         assertEquals("Hello, Ayoub!", result.getResponse().getContentAsString());
     }
-
     @Test
     public void testHelloWithName() throws Exception {
-        mvc.perform(get("/?name=Dan"))
-                .andExpect(content().string("Hello, Dan!"));
+        mvc.perform(get("/?name=Azzden"))
+                .andExpect(content().string("Hello, Azzden!"));
     }
 }
